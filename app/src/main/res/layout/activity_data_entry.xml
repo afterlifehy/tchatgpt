@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_data_entry_bg"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:elevation="@dimen/dp_0">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Theme.AppCompat"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/dp_10"
+                android:src="@mipmap/ic_back" />
+
+            <com.fitness.common.widget.GradientTextview
+                android:id="@+id/gtv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/choose_gender"
+                android:textSize="@dimen/sp_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/layout_chooseGender"
+        layout="@layout/layout_choose_gender"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_chooseAge"
+        layout="@layout/layout_choose_age"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_chooseBMI"
+        layout="@layout/layout_choose_bmi" />
+
+    <include
+        android:id="@+id/layout_choosePlan"
+        layout="@layout/layout_choose_plan"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.aries.ui.view.radius.RadiusTextView
+        android:id="@+id/rtv_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_66"
+        android:layout_marginStart="@dimen/dp_6"
+        android:layout_marginEnd="@dimen/dp_6"
+        android:gravity="center"
+        android:textColor="@color/color_ff51798e"
+        android:textSize="@dimen/sp_14"
+        app:rv_backgroundColor="@color/white"
+        app:rv_radius="@dimen/dp_12"
+        tools:text="15min" />
+</LinearLayout>

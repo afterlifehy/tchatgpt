@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_chooseGender"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_26"
+        android:layout_marginTop="@dimen/dp_22"
+        android:layout_marginEnd="@dimen/dp_26"
+        android:src="@mipmap/ic_male" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Female"
+        android:textColor="@color/color_ff51798e"
+        android:textSize="@dimen/sp_20" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_43"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="@dimen/dp_89"
+            android:layout_height="@dimen/dp_89"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@drawable/selector_male"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="@dimen/dp_89"
+            android:layout_height="@dimen/dp_89"
+            android:layout_marginStart="@dimen/dp_12"
+            android:background="@drawable/selector_female"
+            android:button="@null" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_keepSecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_43"
+        android:text="@string/keep_secret"
+        android:textColor="@color/color_ff6a93ce"
+        android:textSize="@dimen/sp_16" />
+</LinearLayout>

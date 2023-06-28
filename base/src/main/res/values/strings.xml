@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">base</string>
+    <string name="choose_gender">Choose gender</string>
+    <string name="keep_secret">Keep Secret</string>
+    <string name="what_is_your_age">What is your age?</string>
+    <string name="Ok">Ok</string>
+    <string name="Reset">Reset</string>
+    <string name="your_bmi_is">Your BMI is：</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="set_exercise_time_perday">Set exercise time (perday)</string>
+    <string name="set_frequency">Set frequency</string>
+    <string name="use_equipment">Use equipment</string>
+    <string name="Expect">Expect</string>
+    <string name="create_training_plan">Create training plan</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_data_entry_bg"
+    android:paddingStart="@dimen/dp_36"
+    android:paddingEnd="@dimen/dp_36">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_vatago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_73"
+        android:drawablePadding="@dimen/dp_12"
+        android:gravity="center"
+        android:text="Vatago"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        app:drawableStartCompat="@mipmap/ic_vatago" />
+
+    <com.aries.ui.view.radius.RadiusFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_vatago"
+        android:layout_marginStart="@dimen/dp_32"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:padding="@dimen/dp_20"
+        app:rv_backgroundColor="@color/white"
+        app:rv_bottomLeftRadius="@dimen/dp_20"
+        app:rv_bottomRightRadius="@dimen/dp_20"
+        app:rv_topLeftRadius="@dimen/dp_4"
+        app:rv_topRightRadius="@dimen/dp_20">
+
+        <!--        <com.fitness.common.dsbridge.DWebView-->
+        <!--            android:id="@+id/dw_web"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+    </com.aries.ui.view.radius.RadiusFrameLayout>
+
+</RelativeLayout>

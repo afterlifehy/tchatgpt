@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_chooseBMI"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dp_36"
+    android:paddingEnd="@dimen/dp_36">
+
+    <com.fitness.common.widget.GradientTextview
+        android:id="@+id/gtv_bmiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_56"
+        android:text="@string/your_bmi_is"
+        android:textSize="@dimen/sp_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60">
+
+        <TextView
+            android:id="@+id/tv_heightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Height"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_cmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_heightTitle"
+            android:layout_alignParentEnd="true"
+            android:text="cm"
+            android:textColor="@color/color_ff6a93ce" />
+    </RelativeLayout>
+
+    <com.fitness.common.widget.RuleView
+        android:id="@+id/rv_height"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_18"
+        app:gv_currentValue="170"
+        app:gv_gradationNumberGap="@dimen/dp_21"
+        app:gv_gradationUnit="1"
+        app:gv_indicatorLineLen="@dimen/dp_31"
+        app:gv_longGradationLen="@dimen/dp_22"
+        app:gv_longLineWidth="@dimen/dp_2"
+        app:gv_maxValue="210"
+        app:gv_minValue="100"
+        app:gv_shortGradationLen="@dimen/dp_14"
+        app:gv_shortLineWidth="@dimen/dp_2"
+        app:zjun_bgColor="@color/transparent"
+        app:zjun_gradationColor="@color/color_ffbfd9e6"
+        app:zjun_indicatorLineColor="@color/color_ff6a93ce"
+        app:zjun_indicatorLineWidth="@dimen/dp_2"
+        app:zjun_textColor="@color/color_ffbfd9e6"
+        app:zjun_textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60">
+
+        <TextView
+            android:id="@+id/tv_weightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Weight"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tv_kgTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_weightTitle"
+            android:layout_alignParentEnd="true"
+            android:text="kg"
+            android:textColor="@color/color_ff6a93ce" />
+    </RelativeLayout>
+
+    <com.fitness.common.widget.RuleView
+        android:id="@+id/rv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_18"
+        app:gv_currentValue="70"
+        app:gv_gradationNumberGap="@dimen/dp_21"
+        app:gv_gradationUnit="1"
+        app:gv_indicatorLineLen="@dimen/dp_31"
+        app:gv_longGradationLen="@dimen/dp_22"
+        app:gv_longLineWidth="@dimen/dp_2"
+        app:gv_maxValue="120"
+        app:gv_minValue="40"
+        app:gv_shortGradationLen="@dimen/dp_14"
+        app:gv_shortLineWidth="@dimen/dp_2"
+        app:zjun_bgColor="@color/transparent"
+        app:zjun_gradationColor="@color/color_ffbfd9e6"
+        app:zjun_indicatorLineColor="@color/color_ff6a93ce"
+        app:zjun_indicatorLineWidth="@dimen/dp_2"
+        app:zjun_textColor="@color/color_ffbfd9e6"
+        app:zjun_textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_bmiOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_58"
+        android:background="@mipmap/ic_age_ok"
+        android:gravity="center"
+        android:text="@string/Ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+
+    <com.aries.ui.view.radius.RadiusTextView
+        android:id="@+id/rtv_bmiReset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+        android:layout_marginTop="@dimen/dp_24"
+        android:gravity="center"
+        android:text="@string/Reset"
+        android:textColor="@color/color_ff51798e"
+        android:textSize="@dimen/sp_20"
+        app:rv_backgroundColor="@color/transparent"
+        app:rv_radius="@dimen/dp_16"
+        app:rv_strokeColor="@color/color_ff879aa3"
+        app:rv_strokeWidth="@dimen/dp_05" />
+</LinearLayout>

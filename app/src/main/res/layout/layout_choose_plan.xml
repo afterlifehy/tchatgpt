@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_choosePlan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/dp_36"
+    android:paddingEnd="@dimen/dp_36"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_exerciseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/set_exercise_time_perday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_exerciseTime"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/set_frequency"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_frequency"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/use_equipment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_equipment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_except"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/Expect"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_14" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_except"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_createPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_36"
+        android:background="@mipmap/ic_age_ok"
+        android:gravity="center"
+        android:text="@string/create_training_plan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+
+    <com.aries.ui.view.radius.RadiusTextView
+        android:id="@+id/rtv_planReset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+        android:layout_marginTop="@dimen/dp_24"
+        android:gravity="center"
+        android:text="@string/Reset"
+        android:textColor="@color/color_ff51798e"
+        android:textSize="@dimen/sp_20"
+        app:rv_backgroundColor="@color/transparent"
+        app:rv_radius="@dimen/dp_16"
+        app:rv_strokeColor="@color/color_ff879aa3"
+        app:rv_strokeWidth="@dimen/dp_05" />
+</LinearLayout>
